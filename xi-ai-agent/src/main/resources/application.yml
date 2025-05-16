@@ -4,6 +4,11 @@ spring:
   profiles:
     active: local
   ai:
+    dashscope:
+      api-key: your-api-key
+      chat:
+        options:
+          model: qwen-plus
     ollama:
       base-url: http://localhost:11434
       chat:
