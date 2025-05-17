@@ -1,5 +1,7 @@
 ### CUSTOM ###
 application-local.yml
+# 临时文件夹
+tmp
 
 HELP.md
 target/
