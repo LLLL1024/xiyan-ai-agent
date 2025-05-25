@@ -13,6 +13,12 @@ spring:
       base-url: http://localhost:11434
       chat:
         model: gemma3:1b
+#    vectorstore:
+#      pgvector:
+#        index-type: HNSW
+#        dimensions: 1536  # 要根据自己的实际需求去填写对应的维度（最好精确一点，后期可能改不了）
+#        distance-type: COSINE_DISTANCE
+#        max-document-batch-size: 10000 # Optional: Maximum number of documents per batch
 server:
   port: 8123
   servlet:
