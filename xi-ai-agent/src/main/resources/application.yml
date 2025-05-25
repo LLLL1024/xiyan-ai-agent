@@ -13,6 +13,12 @@ spring:
       base-url: http://localhost:11434
       chat:
         model: gemma3:1b
+  # pg 数据库连接
+  # url: jdbc:postgresql://改为你的公网地址:端口号/xi_ai_agent
+  datasource:
+    url: jdbc:postgresql://xxx/xi_ai_agent
+    username: xxx
+    password: xxx
 #    vectorstore:
 #      pgvector:
 #        index-type: HNSW
@@ -40,8 +46,12 @@ knife4j:
   enable: true
   setting:
     language: zh_cn
-#logging:
-#  level:
-#    org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor: debug
+# searchAPI
+search-api:
+  api-key: 你的 API Key
+# 修改日志级别，查看 Spring AI 更多调用细节
+logging:
+  level:
+    org.springframework.ai: DEBUG
 
 
