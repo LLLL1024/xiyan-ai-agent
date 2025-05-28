@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: xi-image-search-mcp-server
+  profiles:
+    active: sse   # stdio 只需要 jar 包，而 sse 需要启动该项目
+server:
+  port: 8127
