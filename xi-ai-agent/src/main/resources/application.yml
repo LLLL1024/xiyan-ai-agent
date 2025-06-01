@@ -23,10 +23,11 @@ spring:
     #          servers-configuration: classpath:mcp-servers.json
   # pg 数据库连接
   # url: jdbc:postgresql://改为你的公网地址:端口号/xi_ai_agent
-  datasource:
-    url: jdbc:postgresql://xxx/xi_ai_agent
-    username: xxx
-    password: xxx
+  # 关闭了 pgvector，要打开得去 aliyun 充值
+#  datasource:
+#    url: jdbc:postgresql://xxx/xi_ai_agent
+#    username: xxx
+#    password: xxx
 #    vectorstore:
 #      pgvector:
 #        index-type: HNSW
