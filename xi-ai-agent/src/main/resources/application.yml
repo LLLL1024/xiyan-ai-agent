@@ -13,14 +13,15 @@ spring:
       base-url: http://localhost:11434
       chat:
         model: gemma3:1b
-    mcp:
-      client:
-        sse:
-          connections:
-            server1:
-              url: http://localhost:8127
-    #        stdio:
-    #          servers-configuration: classpath:mcp-servers.json
+# 临时注释掉，便于大家开发调试和部署
+#    mcp:
+#      client:
+#        sse:
+#          connections:
+#            server1:
+#              url: http://localhost:8127
+#        stdio:
+#          servers-configuration: classpath:mcp-servers.json
   # pg 数据库连接
   # url: jdbc:postgresql://改为你的公网地址:端口号/xi_ai_agent
   # 关闭了 pgvector，要打开得去 aliyun 充值
